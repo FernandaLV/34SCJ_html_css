@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>HTML + CSS</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            h2{color: #d3d3d3}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Título Principal</h1>
+            <h2>Título Secundario</h2>
+        </header>
+        <main>
+            <section>Seção</section>
+            <aside>Lateral</aside>
+            
+            <hr />
+            
+            <p>Isso é um paragrafo</p>
+            
+            <hr />
+            
+            <div>Isto é uma div</div>
+            
+            <hr />
+            
+            <div>
+                Outra div com link: <a href="https://www.fiap.com.br/" target="_blank">Clique aqui!</a>
+            </div>
+            
+            <hr />
+            
+            Lista não ordenada
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            Lista ordenada
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+            
+            <hr />
+            
+            <b>bold</b>
+            <br />
+            <strong>strong - conteúdo semântico de ênfase, mas igual layout que o bold </strong>
+            <br />
+            <br />
+            <em>em</em>
+            <br />
+            <i>italico - conteúdo semântico de ênfase, mas igual layout que o em</i>
+            <br />
+            <br />
+            <span>span 1</span> <span>span 2</span> <span>span 3</span>
+            
+            <hr />
+            
+            Imagem de uma flor: 
+            <img 
+                src="https://s2.glbimg.com/E-M2C2G-2mIlVxxqAn4dfFgL58w=/620x455/e.glbimg.com/og/ed/f/original/2018/11/08/flor-de-lotus.jpg" 
+                alt="flor"
+                width="200px" 
+            />
+            
+            <hr />
+            
+            Um vídeo:
+            <video controls width="250">
+                <source src="/media/examples/flower.webm"
+                        type="video/webm">
+                <source src="/media/examples/flower.mp4"
+                        type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+
+            <hr />
+            
+            Picture: 
+            <picture>
+                <source srcset="https://s2.glbimg.com/E-M2C2G-2mIlVxxqAn4dfFgL58w=/620x455/e.glbimg.com/og/ed/f/original/2018/11/08/flor-de-lotus.jpg"
+                        media="(min-width: 800px)">
+                <img src="https://li7.rightinthebox.com/images/50x50/201904/vkhdyx1555660679432.jpg" />
+            </picture>
+            
+            <hr />
+            
+            <table>
+                <tr>
+                    <td>XXX</td>
+                    <td>YYY</td>
+                </tr>
+                <tr>
+                    <td>AAA</td>
+                    <td>BBB</td>
+                </tr>
+            </table>    
+            
+            <hr />
+            
+            <form method="POST" action="https://google.com">
+                <input type="text" /><br />
+                <input type="password" /><br />
+                <input type="radio" id="radio" /><label for="radio">radio</label><br />
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select><br />
+                <button type="submit">Enviar</button>
+            </form>
+
+            <hr />
+
+            <font face="verdana" color="green">This is some text!</font>
+
+            <hr />
+
+            SVG: 
+            <svg version="1.1" baseProfile="full" width="300" height="200" xmlns="http://www.w3.org/2000/svg"> 
+                <rect width="100%" height="100%" fill="black" /> 
+                <circle cx="150" cy="100" r="90" fill="blue" /> 
+            </svg>
+            
+            <hr />
+
+            CANVAS: 
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.
+            </canvas>
+            
+            <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0,0);
+            ctx.lineTo(200,100);
+            ctx.stroke();
+            </script>
+                
+        </main>
+    </body>
+</html>
